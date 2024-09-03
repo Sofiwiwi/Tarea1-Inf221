@@ -5,13 +5,6 @@
 
 using namespace std;
 
-void print_array(int arreglo[], int n) {
-    for (int i = 0; i < n; i++) {
-        cout << arreglo[i] << " ";
-    }
-    cout << endl;
-}
-
 void selection_sort(int arreglo[], int n) {
     for (int i = 0; i < n - 1; i++) {
         int elemento_menor = i;

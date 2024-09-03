@@ -2,13 +2,6 @@
 using namespace std;
 
 
-void print_array(int arreglo[], int n) {
-    for (int i = 0; i < n; i++) {
-        cout << arreglo[i] << " ";
-    }
-    cout << endl;
-}
-
 void merge(int arreglo[], int inicio, int mitad, int fin) {
     int n1 = mitad - inicio + 1;
     int n2 = fin - mitad;
