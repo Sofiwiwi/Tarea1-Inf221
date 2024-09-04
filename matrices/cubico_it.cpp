@@ -111,6 +111,7 @@ int main(){
         int vol = n * n * n;
         gr_nn << vol << " " << duracion.count() << endl;
     }
+
     nmp.close();
     nn.close();
     sal_mnp.close();

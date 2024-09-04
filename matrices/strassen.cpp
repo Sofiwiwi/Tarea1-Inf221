@@ -84,13 +84,24 @@ vector<vector<lld>> strassen(const vector<vector<lld>> &A, const vector<vector<l
 
 
 int main(){
-    ifstream nn("datasets/dataset_strassen.txt");
+    ifstream nn("datasets/dataset_nxn.txt");
     ofstream sal_nn("salidas/strassen_salida_nn.txt");
     ofstream gr_nn("salidas para graficar/strassen_salida_nn.txt");
     int casos, n;
     nn >> casos;
     for (int i = 0; i < casos; i++) {
         nn >> n >> n;
+        if (log2(n) != (int)log2(n)) {
+            sal_nn << "No se puede realizar la multiplicacion de matrices" << endl;
+            gr_nn << 0 << " " << 0 << endl;
+            int basura;
+            for (int j = 0; j < n; j++) {
+                for (int k = 0; k < n; k++) {
+                    nn >> basura;
+                }
+            }
+            continue;
+        }
         vector<vector<lld>> matriz_A(n, vector<lld>(n));
         for (int j = 0; j < n; j++) {
             for (int k = 0; k < n; k++) {

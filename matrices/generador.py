@@ -25,7 +25,13 @@ with open("datasets/dataset_nxn.txt", "w") as archivo:
     archivo.write(str(casos) + "\n")
     # genera matrices de nxn
     while casos > 0:
+        k = random.randint(1, 8)
         n = random.randint(1, 256)
+        escala_dos = random.randint(0, 1)
+        # Hay un 50% de probabilidad de que el tamaño de la matriz sea una potencia de 2
+        # lo cual es necesario para el algoritmo de Strassen
+        if escala_dos == 1:
+            n = 2**k
         casos -= 1
         cont = 0
         while cont < 2:
@@ -36,19 +42,3 @@ with open("datasets/dataset_nxn.txt", "w") as archivo:
                 archivo.write("\n")
             cont += 1
 
-with open("datasets/dataset_strassen.txt", "w" ) as archivo:
-    casos = 75
-    temp = 0
-    archivo.write(str(casos) + "\n")
-    for i in range(casos):
-        casos -= 1
-        cont = 0
-        k = random.randint(1, 8)
-        n = 2**k
-        while cont < 2:
-            archivo.write(str(n) + " " + str(n) + "\n")
-            for i in range(n):
-                for j in range(n):
-                    archivo.write(str(random.randint(1, 100)) + " ")
-                archivo.write("\n")
-            cont += 1
