@@ -144,4 +144,14 @@ int main(){
         sal_inv << endl;
         gr_inv << n << " " << duracion.count() << endl;
     }
+    al.close();
+    ord.close();
+    inv.close();
+    sal_al.close();
+    sal_ord.close();
+    sal_inv.close();
+    gr_al.close();
+    gr_ord.close();
+    gr_inv.close();
+    return 0;
 }
