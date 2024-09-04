@@ -7,11 +7,11 @@ vector<vector<int> cubico_trad(vector<vector<int>> &matriz_A, vector<vector<int>
     int m = matriz_A[0].size();
     int p = matriz_B[0].size();
     vector<vector<int>> matriz_C(n, vector<int>(p));
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < p; j++) {
-            matriz_C[i][j] = 0;
-            for (int k = 0; k < m; k++) {
-                matriz_C[i][j] += matriz_A[i][k] * matriz_B[k][j];
+    for (int i = 0; i < n; i++) {  /
+        for (int j = 0; j < p; j++) { 
+            matriz_C[i][j] = 0; 
+            for (int k = 0; k < m; k++) {  
+                matriz_C[i][j] += matriz_A[i][k] * matriz_B[k][j]; 
             }
         }
     }
