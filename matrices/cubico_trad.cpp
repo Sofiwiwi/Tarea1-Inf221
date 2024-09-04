@@ -91,4 +91,11 @@ int main(){
         int vol = n * n * n;
         gr_nn << vol << " " << duracion.count() << endl;  
     }
+    nmp.close();
+    nn.close();
+    sal_mnp.close();
+    sal_nn.close();
+    gr_mnp.close();
+    gr_nn.close();
+    return 0;
 }
