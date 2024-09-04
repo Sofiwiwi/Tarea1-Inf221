@@ -51,8 +51,8 @@ void merge_sort(int arreglo[], int inicio, int fin) {
 
 int main(){
     ifstream archivo("dataset.txt");
-    ofstream archivo_salida("salida_merge_sort.txt");
-    ofstream archivo_salida2("salida_merge_sort2.txt");
+    ofstream archivo_salida("salidas/salida_merge_sort.txt");
+    ofstream archivo_salida2("salidas para graficar/salida_merge_sort2.txt");
     int casos, n;
     archivo >> casos;
     for (int i = 0; i < casos; i++) {
