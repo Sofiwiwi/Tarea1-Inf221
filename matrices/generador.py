@@ -25,7 +25,7 @@ with open("datasets/dataset_nxn.txt", "w") as archivo:
     archivo.write(str(casos) + "\n")
     # genera matrices de nxn
     while casos > 0:
-        k = random.randint(1, 8)
+        k = random.randint(1, 9)
         n = random.randint(1, 256)
         escala_dos = random.randint(0, 1)
         # Hay un 50% de probabilidad de que el tamaño de la matriz sea una potencia de 2

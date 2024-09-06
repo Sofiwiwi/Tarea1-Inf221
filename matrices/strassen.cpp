@@ -82,7 +82,6 @@ vector<vector<lld>> strassen(const vector<vector<lld>> &A, const vector<vector<l
 }
 
 
-
 int main(){
     ifstream nn("datasets/dataset_nxn.txt");
     ofstream sal_nn("salidas/strassen_salida_nn.txt");
@@ -93,7 +92,8 @@ int main(){
         nn >> n >> n;
         if (log2(n) != (int)log2(n)) {
             sal_nn << "No se puede realizar la multiplicacion de matrices" << endl;
-            gr_nn << 0 << " " << 0 << endl;
+            gr_nn << 0 << " " 
+            << 0 << endl;
             int basura;
             for (int j = 0; j < n; j++) {
                 for (int k = 0; k < n; k++) {
@@ -128,8 +128,7 @@ int main(){
             }
             sal_nn << endl;
         }
-        int vol = n * n * n;
-        gr_nn << vol << " " << duracion.count() << endl;
+        gr_nn << n << " " << duracion.count() << endl;
     }
     nn.close();
     sal_nn.close();
