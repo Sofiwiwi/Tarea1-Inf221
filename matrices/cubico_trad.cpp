@@ -30,14 +30,14 @@ int main(){
     ofstream gr_nn("salidas para graficar/cubico_trad_salida_nn.txt");
     int casos, n, m, p;
     nmp >> casos;
-    for (int i = 0; i < casos; i++) {
-        nmp >> n >> m;
-        vector<vector<int>> matriz_A(n, vector<int>(m));
-        for (int j = 0; j < n; j++) {
-            for (int k = 0; k < m; k++) {
-                nmp >> matriz_A[j][k];
-            }
+    nmp >> n >> m;
+    vector<vector<int>> matriz_A(n, vector<int>(m));
+    for (int j = 0; j < n; j++) {
+        for (int k = 0; k < m; k++) {
+            nmp >> matriz_A[j][k];
         }
+    }
+    for (int i = 1; i < casos; i++) {
         nmp >> m >> p;
         vector<vector<int>> matriz_B(m, vector<int>(p));
         for (int j = 0; j < m; j++) {
@@ -45,11 +45,12 @@ int main(){
                 nmp >> matriz_B[j][k];
             }
         }
-        vector<vector<int>> matriz_C;
+        vector<vector<int>> matriz_C(n, vector<int>(p));
         auto start = chrono::steady_clock::now();
         matriz_C = cubico_trad(matriz_A, matriz_B);
         auto end = chrono::steady_clock::now();
         auto duracion = chrono::duration_cast<chrono::nanoseconds>(end - start);
+
         sal_mnp << duracion.count() << endl;
         for (int j = 0; j < n; j++) {
             for (int k = 0; k < p; k++) {
@@ -58,7 +59,9 @@ int main(){
             sal_mnp << endl;
         }
         int vol = n * m * p;
-        gr_mnp << vol << " " << duracion.count() << endl;  
+        gr_mnp << vol << " " << duracion.count() << endl;
+        matriz_A = matriz_B;
+        n = m;
     }
     nn >> casos;
     for (int i = 0; i < casos; i++) {

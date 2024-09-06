@@ -2,7 +2,7 @@ import numpy as np
 import random
 
 with open("datasets/dataset_mnp.txt", "w") as archivo:
-    casos = 150
+    casos = 100
     temp = 0
     archivo.write(str(casos) + "\n")
     # genera matrices de nxm luego mxp luego pxo y asi sucesivamente 
