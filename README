@@ -1,34 +1,34 @@
 El archivo "ordenamiento" contiene lo siguiente:
     - Un archivo llamado "generador.py", el cual se encarga de generar los datasets de prueba.
     - Una carpeta llamada "datasets", la cual contiene los datasets de prueba, contiene dos datasets con 100 
-    casos, uno con orden creciente y el otro con orden decreciente. Además, contiene un dataset con 150 casos
-    con orden aleatorio.
+     casos, uno con orden creciente y el otro con orden decreciente. Además, contiene un dataset con 150 casos
+     con orden aleatorio.
     - Un archivo llamado "insertion_sort.cpp" que contiene el código del algoritmo de ordenamiento por inserción.
     - Un archivo llamado "merge_sort.cpp" que contiene el código del algoritmo de ordenamiento por mezcla.
     - Un archivo llamado "quick_sort.cpp" que contiene el código del algoritmo de ordenamiento por quicksort.
     - Un archivo llamado "sort_std.cpp" que contiene el código del algoritmo de ordenamiento de la librería estándar.
     - Una carpeta llamada "salidas" la cual almacena los resultados de los algoritmos de ordenamiento para cada dataset.
     - Una carpeta llamada "salidas para graficar" la cual almacena la magnitud de los arreglos y su tiempo de ejecución 
-    para cada algoritmo de ordenamiento.
+     para cada algoritmo de ordenamiento.
     - Un archivo llamado "ordenamiento.ipynb" que contiene el código en Python para graficar los resultados de los 
-    algoritmos, utilizando la librería matplotlib. 
+     algoritmos, utilizando la librería matplotlib. 
     - Una carpeta llamada ".ipynb_checkpoints" que contiene los checkpoints del archivo "ordenamiento.ipynb".
 
 El archivo "matrices" contiene lo siguiente:
     - Un archivo llamado "generador.py", el cual se encarga de generar los datasets de prueba.
     - Una carpeta llamada "datasets", la cual contiene los datasets de prueba, contiene un archivo con 150 casos, 
-    las matrices son de axb, la siguiente de bxc y así sucesivamente. El otro archivo contiene 150 casos, las 
-    matrices son de axa, la siguiente también de axa, la siguiente bxb, la siguiente bxb y así sucesivamente.
+     las matrices son de axb, la siguiente de bxc y así sucesivamente. El otro archivo contiene 150 casos, las 
+     matrices son de axa, la siguiente también de axa, la siguiente bxb, la siguiente bxb y así sucesivamente.
     - Un archivo llamado "cubico_trad.cpp" que contiene el código del algoritmo de multiplicación de matrices.
     - Un archivo llamado "cubico_it.cpp" que contiene el código del algoritmo de multiplicación de matrices, la 
-    primera matriz se multiplica por la segunda matriz trasponiéndola.
+     primera matriz se multiplica por la segunda matriz trasponiéndola.
     - Un archivo llamado "strassen.cpp" que contiene el código del algoritmo de multiplicación de matrices de Strassen.
     - Una carpeta llamada "salidas" la cual almacena los resultados de los algoritmos de multiplicación de matrices
-    para cada dataset.
+     para cada dataset.
     - Una carpeta llamada "salidas para graficar" la cual almacena la magnitud de las matrices y su tiempo de ejecución
-    para cada algoritmo de multiplicación de matrices.
+     para cada algoritmo de multiplicación de matrices.
     - Un archivo llamado "matrices.ipynb" que contiene el código en Python para graficar los resultados de los 
-    algoritmos, utilizando la librería matplotlib.
+     algoritmos, utilizando la librería matplotlib.
     - Una carpeta llamada ".ipynb_checkpoints" que contiene los checkpoints del archivo "matrices.ipynb".
 
 Versión de Python: 3.10.12
